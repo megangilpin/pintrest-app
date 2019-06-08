@@ -1,0 +1,51 @@
+/* LINK ELEMENTS */
+a:link {
+  color: #f76c6c;
+}
+
+a:visited {
+  color: #374785;
+}
+
+a:hover {
+  color: #f8e9a1;
+  background-color: #f76c6c;
+  font-weight: bolder;
+}
+
+a:active {
+  color: #374785;
+  background-color: #a8d0e6;
+}
+
+/* BODY ELEMENTS */
+/* body {
+} */
+
+.container {
+    margin: auto;
+    padding: 10px;
+}
+
+
+/* FOOTER ELEMENTS */
+.footer {
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    background-color: #f5f5f5;
+    color: 	#24305e;
+}
+
+/* LANDING PAGE BODY */
+.landing {
+    background-color: #a8d0e6;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 

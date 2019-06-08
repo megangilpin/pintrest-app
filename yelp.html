@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Crumbs: Take Out?</title>
+
+    <!--RESET-->
+    <link rel="stylesheet" href="reset.css">
+
+    <!--BOOSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--Header / Navbar-->
+<nav class="navbar navbar-light" style="background-color: #A8D0E6;">
+    <img src="assets/logo.png" alt="logo"> <h1>Something here</h1> 
+</nav>
+
+<!--Start Body Container-->
+<div class="container">
+    <!--Row with diet box & input form-->
+    <div class="row my-3 mx-3"> 
+        <!--diet box currently links meant for Pinterest recipes-->
+        <div class="col-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header"  style="background-color: #A8D0E6;">
+                  <h3>Dietary Requirements</h3>
+                </div>
+                <!--TO DO: Add links to Pinterest search or something-->
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <a href="#">Vegan</a></li>
+                  <li class="list-group-item">
+                    <a href="#">Vegetarian</a></li>
+                  <li class="list-group-item">
+                    <a href="#">Kosher</a></li>
+                  <li class="list-group-item">
+                    <a href="#">Gluten Free</a></li>
+                  <li class="list-group-item">
+                    <a href="#">Peanut Free</a></li>
+                  <li class="list-group-item">
+                    <a href="#">Dairy Free</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--input form for yelp search-->
+        <div class="col-12 col-md-8">
+            <h2>Decided to give up and go for take out? We understand.</h2>
+            <p>Enter your zip code below to find the nearest restaurants to you!</p>
+            <form>
+                <div class="form-group">
+                      <div class="form-group col-md-4">
+                        <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                      </div>
+                  </div>
+                  <!--DIET TYPES-->
+                  <!--only doing the vegan and vegatarian because those are recognized by Yelp and Keto and etc is not-->
+                  <fieldset class="form-group">
+                    <div class="row">
+                      <legend class="col-form-label col-sm-2 pt-0">Dietary Need?</legend>
+                      <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="veganRadio" value="option1" checked>
+                              <label class="form-check-label" for="Vegan">
+                                Vegan
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="vegRadio" value="option2">
+                              <label class="form-check-label" for="Vegetarian">
+                                Vegetarian
+                              </label>
+                            </div>
+                      </div>
+                    </div>
+                  </fieldset>
+
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
+            </form>
+        </div>
+    </div> 
+
+    <!--Row for ingredients list & links to another page-->
+    <div class="row my-3 mx-3"> 
+            <!--Links to other pages-->
+        <div class="col-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header" style="background-color: #A8D0E6;">
+                    <h3>Actually...</h3>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">I wanna <a href="index.html">Cook</a></li>
+                    <li class="list-group-item">I wanna get some <a href="https://www.pinterest.com/">Pinterest</a> inspiration</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Row to display recipes on page-->
+    <div class="col-12">
+        <div class="row jumbotron my-3 mx-3">
+            <div class="col-12">
+                <div class="row justify-content-center">
+                    <h2 class="mb-3">Options Around</h2>
+                </div>
+    <!-- Div to display recipes on page -->
+                <div class="restOptions row d-flex flex-wrap">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> <!--End Body Container-->
+
+ <!--FOOTER-->
+<div class="footer mt-auto py-3">
+    <center>CRUMBS (c) Team Repo // 2019</center>
+</div>
+  <!--END FOOTER-->
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- JS file -->
+<script type="text/javascript" src="logic.js"></script>
+
+</body>
+</html>

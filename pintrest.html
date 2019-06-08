@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Crumbs</title>
+
+  <!--RESET-->
+  <link rel="stylesheet" href="reset.css">
+
+  <!--BOOSTRAP-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--CUSTOM CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Header / Navbar-->
+  <nav class="navbar navbar-light" style="background-color: #A8D0E6;">
+    <img src="assets/logo.png" alt="logo">
+    <h1>Something here</h1>
+  </nav>
+
+  <!--Start Body Container-->
+  <div class="container">
+    <!--Row with diet box & input form-->
+    <div class="row my-3 mx-3">
+      <!--diet box currently links meant for Pinterest recipes-->
+      <div class="col-6 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header" style="background-color: #A8D0E6;">
+            <h3>Dietary Requirements</h3>
+          </div>
+          <!--TO DO: Add links to Pinterest search or something-->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="#">Vegan</a></li>
+            <li class="list-group-item">
+              <a href="#">Vegetarian</a></li>
+            <li class="list-group-item">
+              <a href="#">Kosher</a></li>
+            <li class="list-group-item">
+              <a href="#">Gluten Free</a></li>
+            <li class="list-group-item">
+              <a href="#">Peanut Free</a></li>
+            <li class="list-group-item">
+              <a href="#">Dairy Free</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--input form for ingredients-->
+      <div class="col-12 col-md-8">
+        <form>
+          <div class="form-group">
+            <h2><label for="ingredients">Add your ingredients below</label></h2>
+            <textarea class="form-control" id="ingredientList" rows="10"
+              placeholder="Separate your ingredients with a comma"></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-dark">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!--Row for ingredients list & links to another page-->
+    <div class="row my-3 mx-3">
+      <!--Links to other pages-->
+      <div class="col-6 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header" style="background-color: #A8D0E6;">
+            <h3>I Give UP...</h3>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.seamless.com/">Seamless</a></li>
+            <li class="list-group-item"><a href="https://www.pinterest.com/">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Row to display recipes on page-->
+      <div class="col-12">
+        <div class="row jumbotron my-3 mx-3">
+          <div class="col-12">
+            <div class="row justify-content-center">
+              <h2 class="mb-3">Food Porn</h2>
+            </div>
+            <!-- Div to display recipes on page -->
+            <div class="recipeList row d-flex flex-wrap">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--End Body Container-->
+
+    <!--FOOTER-->
+    <div class="footer mt-auto py-3">
+      <center>CRUMBS (c) Team Repo // 2019</center>
+    </div>
+    <!--END FOOTER-->
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- JS file -->
+    <script type="text/javascript" src="logic.js"></script>
+
+</body>
+
+</html>
